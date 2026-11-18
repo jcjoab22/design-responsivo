@@ -1,8 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
  }
+
+
+
 
  body {
   background-color: #07090e;
@@ -15,10 +18,16 @@
   padding: 1.25rem;
  }
 
+
+
+
  .container {
     width: 100%;
     max-width: 1080px;
  }
+
+
+
 
  .hero-card {
     background-color: #0e131f;
@@ -33,12 +42,21 @@
  }
 
 
+
+
+
+
+
+
  .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
  }
+
+
+
 
  .badge-top {
     background-color: rgba(6, 182, 212, 0.15);
@@ -54,6 +72,9 @@
     gap: 0.4rem;
  }
 
+
+
+
 .hero-title {
     color: #ffffff;
     font-size: 2rem;
@@ -61,47 +82,75 @@
     line-height: 1.15;
 }
 
+
+
+
 .hero-description {
     color: #94a3b8;
     font-size: 0.95rem;
     line-height: 1.6;
     max-width: 480px;
 }
-
-
-.badges-row {
+.badge-row{
     display: flex;
-    justify-content: center;
-    gap: 0.65rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+
 .badge-item {
-    background-color: #151d30;
-    color: #e2e8f0;
-    border: 1px solid #23304c;
-    font-size: 0.85rem; 
-    font-weight: 500;
+    background-color: rgba(6, 182, 212, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     padding: 0.45rem 0.95rem;
-    border-radius: 8px;
+    border-radius: 999px;
+    display: inline-flex;
     align-items: center;
     gap: 0.4rem;
 }
 
+
 .btn-play {
     background: linear-gradient(135deg, #38bdf8, #8b5cf6);
     color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+  
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     text-decoration: none;
-     font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  width: 100%;
-  margin-top: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+.hero-media {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+    .hero-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 2rem 3rem;
+    }
+    .hero-content {
+        align-items: flex-start;
+        max-width: 500px;
+    }
 
+
+    
+}
